@@ -1,0 +1,139 @@
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #ff6347;
+}
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f4f4f4;
+}
+.hero h1 {
+    font-size: 2.5em;
+}
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+.hero .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #ff6347;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.skills-container span {
+    display: inline-block;
+    background: #eee;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+}
+.project, .experience, .education {
+    margin: 20px auto;
+    max-width: 600px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    padding: 10px;
+    border: none;
+    background: #ff6347;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover {
+    background: #e5533d;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    .burger {
+        display: flex;
+    }
+}
