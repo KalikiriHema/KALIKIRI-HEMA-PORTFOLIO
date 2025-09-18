@@ -1,7 +1,6 @@
-// Burger menu toggle for mobile
-const burger = document.querySelector('.burger');
-const navLinks = document.querySelector('.nav-links');
-
-burger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+// Contact form submission
+document.getElementById('contact-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  alert("Thank you! Your message has been sent.");
+  this.reset();
 });
